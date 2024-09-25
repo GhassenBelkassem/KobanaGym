@@ -1,0 +1,79 @@
+<div class="bg-white rounded-lg px-4 py-5 max-w-xl mx-auto">
+    <!-- User Details -->
+    <div class="flex items-center justify-between mb-8">
+        <div class="text-gray-700">
+            <div class="font-bold text-xl mb-2">Historique</div>
+            <div class="text-sm">Première inscription: 01/05/2023</div>
+            <div class="text-sm">Client ID #: COB12345</div>
+        </div>
+    </div>
+
+    <!-- User Info -->
+    <div class="border-b-2 border-gray-300 pb-8 mb-8">
+        <div class="text-gray-700 mb-2">Nom et prénom: Mohamed Mechergui</div>
+        <div class="text-gray-700 mb-2">Âge: 24</div>
+    </div>
+
+    <!-- Training Records Table -->
+    <table class="w-full text-left mb-8 border-b-2">
+        <thead>
+            <tr>
+                <th class="text-gray-700 font-bold uppercase py-2">Période</th>
+                <th class="text-gray-700 font-bold uppercase py-2">Type de Formation</th>
+                <th class="text-gray-700 font-bold uppercase py-2">Statut</th>
+                <th class="text-gray-700 font-bold uppercase py-2">Montant</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="py-4 text-gray-700">10/08/2024 - 10/09/2024</td>
+                <td class="py-4 text-gray-700">GYM</td>
+                <td class="py-4 text-gray-700">Payé</td>
+                <td class="py-4 text-gray-700">40 Dinar</td>
+            </tr>
+            <tr>
+                <td class="py-4 text-gray-700">10/06/2024 - 10/07/2024</td>
+                <td class="py-4 text-gray-700">GYM et Kick Boxing</td>
+                <td class="py-4 text-gray-700">Payé</td>
+                <td class="py-4 text-gray-700">80 Dinar</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+        
+        <div class="flex flex-col gap-4 mt-8">
+            <div class="mb-4">
+                <mat-label class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block">
+                  Sport
+                </mat-label>
+                <mat-form-field appearance="outline" class="w-100" color="primary">
+                  <mat-select placeholder="Sélectionnez un sport">
+                    <mat-option value="Gym">Gym</mat-option>
+                    <mat-option value="Box">Box</mat-option>
+                    <mat-option value="Thai">Thai</mat-option>
+                    <mat-option value="Gymnastique">Gymnastique</mat-option>
+                  </mat-select>
+                </mat-form-field>
+        </div>
+            <mat-label class="text-sm font-semibold mb-2">
+                Sélectionner un plan
+            </mat-label>
+            <mat-radio-group name="plan" class="mb-4">
+                <mat-radio-button value="1mois" class="text-sm">1 Mois</mat-radio-button>
+                <mat-radio-button value="3mois" class="text-sm">3 Mois</mat-radio-button>
+                <mat-radio-button value="annuel" class="text-sm">Annuel</mat-radio-button>
+            </mat-radio-group>
+            <div class="mb-4">
+                <mat-label class="text-sm font-semibold mb-2">
+                    Montant
+                </mat-label>
+                <mat-form-field appearance="outline" class="w-full">
+                    <input matInput type="number" name="discount" placeholder="Entrez le pourcentage de réduction" />
+                </mat-form-field>
+            </div>
+            <button class="py-2 px-4 rounded-lg text-sm font-medium text-white bg-teal-600 hover:bg-teal-700 transition duration-200">
+                Confirm
+            </button>
+        </div>
+    </div>
